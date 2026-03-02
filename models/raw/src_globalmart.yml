@@ -10,5 +10,10 @@ sources:
 
       - name: orders
         description: "Orders placed by customers"
+        columns:
+          - name: orderid
+            tests:
+              - unique
+              - not_null
 
       - name: product
